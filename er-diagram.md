@@ -1,12 +1,3 @@
-
-Nguyên nhân lỗi và cách sửa nhanh
-- Mermaid ER trên GitHub không chấp nhận hậu tố số như PK1, PK2, PK3, PK4. Chỉ dùng PK hoặc FK (không có số).
-- Lỗi bạn gặp “Expecting 'ATTRIBUTE_WORD', got 'ATTRIBUTE_KEY'” xảy ra khi parser thấy FK (hoặc PK) ở vị trí nó đang chờ tên thuộc tính, thường là do dòng trước có token PKx không hợp lệ làm “vỡ” cú pháp hoặc do hai thuộc tính dính trên cùng một dòng.
-- Cách an toàn nhất để hiển thị trên GitHub: bỏ toàn bộ PK/FK trên dòng thuộc tính (chỉ để type + name). Khóa/quan hệ vẫn thể hiện bằng các đường nối.
-
-Dưới đây là 2 bản đã sửa. Bản A (an toàn nhất) bỏ PK/FK trong phần thuộc tính. Bản B giữ PK/FK nhưng chuẩn hóa về PK/FK (không số). Bạn chỉ cần dùng một trong hai.
-
-Bản A — chắc chắn render trên GitHub
 ````markdown name=ER-diagram.md
 # Airline ER Diagram (Mermaid) — Safe rendering
 
