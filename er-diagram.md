@@ -1,3 +1,4 @@
+```mermaid
 erDiagram
     AIRPORT {
       string Airport_code PK
@@ -86,3 +87,4 @@ erDiagram
     %% Reservations: seat booked on a leg instance
     LEG_INSTANCE ||--o{ RESERVATION : "RESERVATION"
     SEAT ||--o{ RESERVATION : "RESERVATION"
+```
